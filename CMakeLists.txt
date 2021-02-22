@@ -54,7 +54,7 @@ elseif(CMAKE_CXX_COMPILER_ID MATCHES "Clang" AND CMAKE_BUILD_TYPE MATCHES "Relea
 elseif(CMAKE_CXX_COMPILER_ID MATCHES "MSVC" AND CMAKE_BUILD_TYPE MATCHES "Debug")
     target_compile_options(${PROJECT_NAME} PUBLIC 
                                     /W4 /WX- /permissive- /std:c++17
-                                    /TP /Gd /Gm- /RTC0 /diagnostics:classic
+                                    /TP /Gd /Gm- /RTC1 /diagnostics:classic
                                     /fp:precise /EHsc)
     target_link_options(${PROJECT_NAME} PUBLIC /INCREMENTAL /MACHINE:X64)
 
